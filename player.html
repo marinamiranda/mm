@@ -1,0 +1,15 @@
+<div id="player">
+<span id="mute">Mute sound</span>
+<audio id="background_audio" autoplay="autoplay" loop="loop">
+<link rel="stylesheet" type="text/css" href="player.css">
+    <script type="text/javascript" src="player.js"></script>
+</audio> 
+<input type="range" step="any" id="seekbar"/>
+<ul id="seekbarWrapper">
+    <li id="audioSeekbar" hidden=""></li>
+    <li id="audioBuffered" hidden=""></li>
+</ul>
+<div class="AudioClock">
+    <div id="time" ></div>
+    <div id="totalduration"></div>
+</div>

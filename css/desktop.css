@@ -1,0 +1,286 @@
+@media screen and (max-width: 1000px) {
+img {
+	max-width: 40%;
+    height:auto;
+    }
+#player {
+	width: 85% !important;
+	background-color: transparent !important;
+}
+
+}
+
+iframe{
+	background-color: transparent;
+}
+
+.row {
+
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	background: url('../images/mesa4b.jpg') no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	padding: 0px;
+}
+
+h2,h2,h3,h4,h5{
+	font-family: "roboto" !important;
+	font-weight: 100;
+}
+
+span.subTitle {
+	font-size: 16px;
+	position: relative;
+	top: -20px;
+	left: 5px;
+	color: rgb(116, 47, 11);
+}
+
+a{
+	color:  rgb(255,255,255);
+	text-decoration: none;
+	padding: 2px 5px;
+}
+
+a:hover {
+	background-color: rgba(217, 223, 223, 0.89);
+	color: rgb(116, 47, 11);
+}
+
+a:active {
+  outline: 0;
+  background-color: rgba(255, 255, 255, 0.67);
+}
+
+a.btns {
+  cursor: pointer;
+}
+ul {
+	list-style: none;
+	padding-left: 0px;
+	line-height: 30px;
+}
+
+img {
+	max-width: 81%;
+	height: auto;
+	width: 81%;
+	position: absolute;
+	top: 70px;
+	left: 0px;
+}
+
+.paragraph{
+	color: white;
+}
+.container {
+	height: 1000px;
+}
+/* ------ Navigation ------ */
+.navigation{
+	width: 19%;
+	height: 1200px;
+	background: url('../images/backgrounds/inflicted.png') repeat rgba(0,147,127, 0.4);
+	z-index: 1;
+	position: absolute;
+	right: 0px;
+	min-height: 3200px;
+}
+nav{
+	margin-top: 70px;
+}
+/* ------ Parts ------ */
+.main{
+	width: 81%;
+	float: left;
+	text-align: center;
+	background-color: rgba(40, 143, 173, 0.24);
+	/*background-color: rgba(116, 79, 47, 0.67);*/
+	min-height: 3200px;
+}
+
+#intro{
+
+}
+.title{
+	background-color: rgba(240, 237, 187, 0.28);
+	color:  rgba(255, 255, 255, 1);
+}
+
+.info, .caption {
+	background-color: rgba(54, 132, 142, 0.49);
+	position: relative;
+	margin-bottom: 30px;
+	margin: 0px;
+	color: rgb(206, 255, 255);
+	margin-bottom: 20px;
+	margin-top: 20px;
+	display: none;
+}
+.counter{
+	color: white;
+}
+h5.caption2 {
+	background-color: rgba(255, 134, 81, 0.23);
+	position: absolute;
+	margin-bottom: 30px;
+	width: 20%;
+	/* margin: 0px 140px; */
+	color: rgba(255, 252, 252, 0.9);
+	/* margin-bottom: 20px; */
+	/* margin-top: 40px; */
+	padding: 20px 10px;
+	top: 75%;
+	left: 73%;
+	font-size: 16px;
+	text-align: left;
+}
+.info2 {
+	float: left;
+	background-color: rgba(232, 229, 229, 0.61);
+	position: absolute;
+	top: 120px;
+	width: 200px;
+	left: 30px;
+	text-align: left;
+}
+
+.gadget-list {
+	float: right;
+	background-color: rgba(54, 122, 142, 0.42);
+	/*background-color: rgba(215, 129, 105, 0.37);*/
+	position: relative;
+	top: 31px;
+	z-index: 1;
+	right: 0%;
+	color: white;
+}
+.gadget-gallery .caption {
+	padding: 5px 0px;
+
+}
+.machine-nav{
+	top: 65px;
+}
+.instrument-nav{
+	top: 148px;
+}
+.about-nav{
+	top: 124px;
+}
+.me-nav{
+	top: 70px;
+	right: 1%;
+	background-color: rgba(40, 157, 148, 0.56);
+	-webkit-transform: rotate(16deg);
+	-moz-transform: rotate(16deg);
+}
+.contact-nav{
+	top: 187px;
+	right: 1%;
+	background-color: rgba(24, 184, 213, 0.37);
+	-webkit-transform: rotate(-16deg);
+	-moz-transform: rotate(-16deg);
+}
+.NYCinthe00s-nav{
+	float: right;
+	background-color: rgba(242, 255, 251, 0);
+	/* background-color: rgba(215, 129, 105, 0.37); */
+	position: absolute;
+	/* right: 100px; */
+	top: 0px;
+	z-index: 1;
+	/* max-height: 100px; */
+	left: 0px;
+	width: 80%;
+	font-size: 10px;
+	text-align: left;
+	padding: 0px 10px;
+	display: none;
+}
+.gallery {
+
+}
+.gallerynyc img{
+	max-height: 700px;
+	width: auto;
+	top: 130px;
+}
+.gallery.gallerynyc-pic img {
+  max-height: 900px;
+  width: auto;
+  position: inherit;
+  margin-top: 20px;
+}
+
+li.gallerynyc {
+	display: inline;
+}
+.video {
+	  margin: 50px 0px;
+}
+.workspace{
+	background: url("../images/mesa4b.jpg");
+	height: 900px;
+	margin: 0px;
+	background-size: 100%;
+	color: white;
+	position: relative;
+	top: -90px;
+}
+.btns-disabled{
+	display: none;
+}
+.machine-info {
+  position: absolute;
+  width: 170px;
+  right: 10px;
+  top: 400px;
+  color: white;
+}
+.imagecv {
+    
+    height: 510px;
+    z-index: 1;
+    width: 380px;
+    /* position: relative; */
+    /* top: 0px; */
+    float: right;
+    margin-right: 90px;
+}
+.about {
+    margin-top: 70px;
+}
+.me-nav img{
+	z-index: -1;
+}
+.me-nav2 {
+    color: white;
+    float: right;
+}
+@media screen and (min-width : 524px) {
+
+	#main{
+
+
+
+	}
+	#sounds{
+
+	
+	}
+	#codes{
+
+
+	}
+	#machines{
+
+
+	}
+}

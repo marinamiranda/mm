@@ -1,0 +1,47 @@
+@media (max-width : 1020px) {
+.container {
+
+	height: 1000px;
+}
+.gallerynyc img {
+	max-height: 700px;
+	width: auto;
+	max-width: 800px;
+	top: 150px !important;
+	left: 0px !important;
+}
+iframe {
+	background-color: transparent;
+	left: 0px !important;
+	position: absolute;
+	width: 81% !important;
+}
+img {
+	max-width: 81% !important;
+	height: auto;
+	width: 800px;
+	position: absolute;
+	top: 70px;
+	left: 0px !important;
+}
+#player {
+	width: 85% !important;
+	background-color: transparent !important;
+}
+#main{
+	
+}
+#sounds{
+
+}
+
+#codes{
+
+}
+
+#machines{
+
+}
+
+}
+

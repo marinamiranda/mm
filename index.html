@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>marina miranda</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel='stylesheet' href='css/mobile.css' />
+  <link rel='stylesheet' href='css/desktop.css' />
+  <link href='http://fonts.googleapis.com/css?family=Roboto:100,400,300,500' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- main layout -->
+  <script type="text/x-handlebars">
+  <div class="container">
+    <div class="navigation">
+      <h2 class='miname'>{{#link-to "index"}}marina miranda{{/link-to}}</h2>
+      <nav>
+        <ul>
+          <li>{{#link-to "sound"}}sound{{/link-to}}</li>
+          <li>{{#link-to "machines"}}diy instruments{{/link-to}}</li>
+          <li>{{#link-to "early00s"}}early 00s{{/link-to}}</li>
+          <li>{{#link-to "about"}}about{{/link-to}}</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main">
+      {{outlet}}
+    </div>
+  </div>
+  </script>
+<!-- end of layout -->
+<!-- index template -->
+  <script type="text/x-handlebars" id="index">
+    <div id="intro">
+    </div>  
+  </script>
+<!-- end of index template -->
+<!-- sound template -->
+  <script type="text/x-handlebars" id="sound">
+    <div id="sounds">
+    <h2 class='title'> sound</h2>
+    <div class='video'>
+    <iframe src="https://player.vimeo.com/video/34802777?title=0&amp;byline=0&amp;portrait=0" width="600" height="393" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <iframe width="300px" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/100963898&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+  </script>
+<!-- end of sound template -->
+<!-- code template -->
+  <script type="text/x-handlebars" id="code">
+    <div id="codes">
+      <h2 class='title'> code</h2>
+      <h3 class="paragraph">coming soonish...</h>
+    </div>
+  </script>
+<!-- end of code template -->
+<!-- components -->
+<script type="text/x-handlebars" id="machine">
+    <div class="gadget-gallery">
+      <h5 class="caption"> {{title}} </h5> 
+      <div class="gallery">
+        <img {{bind-attr src=image}}>
+        </div>
+      <h5 class="caption2"> {{caption}} </h5> 
+    </div>   
+</script>
+<!-- end of components -->
+<!-- machines template -->
+  <script type="text/x-handlebars" id="machines">
+    <h2 class='title'>home made music instruments </h1>
+    <h5 class="caption"> {{caption}} </h5> 
+    <ul class="gadget-list machine-nav">
+    {{#each}}
+    <li>
+     {{#link-to 'machine' this}} 
+                {{title}}
+             {{/link-to}} 
+             </li>
+    {{/each}}
+    </ul>
+    <div class="machine-info">These are all DIY synths and other musical gadgets built from scratch from electronics to panels...</div>
+    {{outlet}}
+  </script>
+<!-- end of machines template -->
+<!-- instrument template -->
+  <script type="text/x-handlebars" id="musicinstrument">
+  <div class="gadget-gallery">
+    <div class='info'>{{title}}</div>
+    <div class="gallery"><img {{bind-attr src=image}} /></div>
+    <h5 class="caption2"> {{caption}} </h5> 
+  </div>
+  </script>
+<!-- end of instrument template -->
+<!-- instruments template -->
+  <script type="text/x-handlebars" id="musicinstruments">
+    <h2 class='title'>  music instruments </h2>
+    <ul class="gadget-list instrument-nav">
+      {{#each}}
+      <li>
+            {{#link-to 'musicinstrument' this}} 
+                {{title}} 
+             {{/link-to}} 
+      </li>
+        {{/each}}
+      </ul>
+    {{outlet}}
+  </script>
+<!-- end of instruments template -->
+<!-- about template -->
+  <script type="text/x-handlebars" id="about">
+  <div class="about">
+  <h2 class='title'>  about </h2>
+        <ul class="gadget-list about-nav">
+            <li>{{#link-to 'me'}} me {{/link-to}} </li>
+            <li>{{#link-to 'contact'}} contact {{/link-to}} </li>
+        </ul> 
+        {{outlet}}
+
+  </div>
+  </script>
+<!-- end of about template -->
+<!-- about me template -->
+  <script type="text/x-handlebars" id="me">
+  <ul class="me-nav2">
+      <p style="width:400px;">hi, i love building music instruments and playing music. i work as a software developer and live in brooklyn with a dog named atlas moondog. i’m a little bit of a hermit</p>
+
+     
+  </ul>
+ <div class="imagecv">
+      <img src="images/atlasymari.jpg" style="width: 100%;
+    z-index: -1;
+    height: auto;
+    position: relative;
+    top: 0px; 
+    max-width: 100%;
+   ">
+  </div>
+  </script>
+<!-- end of about me template -->
+<!-- contact template -->
+  <script type="text/x-handlebars" id="contact">
+    <ul style=    "margin-top: 170px;
+    margin-right: 20px; color:white;float: right;">
+      <li>me at marinamiranda.net</li>
+    </ul>
+  </script>
+<!-- end of contact template -->
+<script type="text/x-handlebars" id="early00">
+    <div class="gadget-gallery-pic">
+      <h5 class="caption"> {{title}} </h5> 
+      <div class="row">
+        <div>
+          <p class="counter">{{id}} of 193</p>
+          {{#if prev}}
+              <a class="btns" {{action 'prev' prev}}>Previous</a>
+          {{else}}
+              <a class="btns-disabled"{{action 'prev' }}>Previo disabled</a>
+          {{/if}}     
+          {{#if next}}
+              <a class="btns" {{action 'next' next}}>Next</a>
+              {{else}}
+              <a class="btns-disabled"{{action 'next'}}>Nex disabled</a>
+          {{/if}}
+        </div>
+    </div>  
+      <div class="gallery gallerynyc-pic">
+        <img {{bind-attr src=image}}>
+        </div>
+    </div> 
+</script>
+<!-- end of early00 template -->
+<!-- early00s template -->
+<script type="text/x-handlebars" id="early00s">
+    <h5 class="caption"> {{caption}} </h5> 
+    {{outlet}}
+  </script>
+</script>
+<!-- end of early00s template -->
+
+
+<!--  libraries -->
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/handlebars-v1.3.0.js"></script>
+  <script src="js/libs/ember-1.8.1.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
