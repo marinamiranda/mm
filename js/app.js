@@ -152,7 +152,7 @@ var machines =[{
 			id: "9",
 			title: "microtonal glockenspiel",
 			caption: "Microtonal glockenspiel made of steel and wood.",
-			image: "images/glock.jpg"
+			image: "images/micro-glock.jpg"
 		} ,{
 			id: "10",
 			title: "8-step sequencer",

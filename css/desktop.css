@@ -68,12 +68,13 @@ ul {
 }
 
 img {
-	max-width: 81%;
-	height: auto;
-	width: 81%;
-	position: absolute;
-	top: 70px;
-	left: 0px;
+	/* max-width: 81%; */
+	max-height: 700px;
+	width: auto;
+	/* position: absolute; */
+	/* top: 70px; */
+	/* left: 0px; */
+	max-width: 960px;
 }
 
 .paragraph{
@@ -127,7 +128,7 @@ nav{
 	color: white;
 }
 h5.caption2 {
-	background-color: rgba(255, 134, 81, 0.23);
+	background-color: rgba(39, 66, 174, 0.23);
 	position: absolute;
 	margin-bottom: 30px;
 	width: 20%;
